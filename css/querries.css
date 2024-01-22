@@ -32,6 +32,17 @@
 ##################################*/
 
 @media screen and (max-width: 75rem) {
+  .body {
+    margin: 0;
+    padding: 0;
+  }
+  .header-text {
+    max-width: 80%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
   .board p {
     font-size: 13px;
   }
@@ -41,7 +52,7 @@
   }
 
   .navigation {
-    display: hidden;
+    display: none;
   }
 
   .nav-icon {
@@ -63,6 +74,7 @@
     display: none;
   }
 
+  /*
   .navigation {
     background-color: rgba(137, 10, 10, 0.979);
     position: absolute;
@@ -86,6 +98,7 @@
     visibility: hidden;
   }
 
+  */
   .navigation a {
     color: white;
     cursor: pointer;
@@ -110,8 +123,8 @@
   .header-items:hover #sub-menue {
     visibility: hidden;
   }
-
-  /*//////////////////////////////////////
+  */
+  /*/////////////////////////////////////
   checkout media query
   ///////////////////////////////////////*/
   .checkout-section {
@@ -171,8 +184,6 @@
   .navigation {
     height: 85vh;
   }
-
-  /*advert section*/
 
   .advert-main h1 {
     font-size: 14px;
@@ -253,7 +264,7 @@
 
   .header-text {
     margin-top: 8rem;
-    margin-right: 16rem;
+    margin-right: 24rem;
 
     text-align: center;
   }
@@ -321,8 +332,13 @@
 
 @media screen and (max-width: 28rem) {
   .navigation {
-    font-size: 10px;
-    height: 80vh;
+    font-size: 8px;
+    height: 70vh;
+    transform: translate(-50%);
+  }
+
+  .header-items {
+    margin-right: 0.2rem;
   }
 
   .nav-icon {
@@ -337,12 +353,12 @@
   }
 
   .advert-main h1 {
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .advert-main p {
-    font-size: 8px;
-    margin-right: 0.8rem;
+    font-size: 5px;
+    margin-right: 1rem;
   }
 
   .advert-main img {
@@ -379,13 +395,15 @@
   ///////////////////////////////////////*/
 
   .declaration-page-main-2 {
-    margin-right: 12rem;
+    margin-left: 5rem;
     width: 12rem;
     font-size: 12px;
   }
 
-  .declaration-page-1 {
-    flex-wrap: wrap;
+  .checkout-main-contents {
+    width: 80%;
+
+    padding: 2rem;
   }
 
   .declare--3 {
@@ -394,24 +412,22 @@
 
   .declare--2 {
     font-size: 14px;
-    margin-right: 1rem;
   }
 
   .checkout-section {
     font-size: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-items: left;
+    display: grid;
+    grid-row: 1fr 1fr;
     overflow-x: hidden;
   }
 
   .checkout-section input {
     margin-right: 3rem;
-    width: 8rem;
+    width: 100%;
   }
 
   .checkout-section select {
-    width: 8rem;
+    width: 100%;
     font-size: 8px;
     margin-right: 0.3rem;
   }

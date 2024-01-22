@@ -12,6 +12,8 @@ body {
   font-family: "Poppins", sans-serif;
   color: #4f4f4f;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .main-header {
@@ -464,4 +466,4 @@ footer-section
   position: fixed;
 }
 
-//5wpwYD9QyKVuUX6
+/*5wpwYD9QyKVuUX6
