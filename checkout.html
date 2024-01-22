@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout-page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="stylesheet" href="css/querries.css" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-contents">
+        <div class="content-1">
+          <h1>Heathrow Checkout <i class="fi fi-sr-shopping-cart"></i></h1>
+        </div>
+
+        <div class="content-2">
+          <div class="head-icon">
+            <a href="index.html"
+              ><i id="head-icon" class="fi fi-sr-home"></i
+            ></a>
+          </div>
+          <div class="head-icon">
+            <a><i class="fi fi-sr-book-open-cover"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="checkout-section">
+      <div class="checkout-main-contents">
+        <div class="declaration-page-1">
+          <div class="declare-1">
+            <form action="#">
+              <div class="declare-1-inputs">
+                <div>
+                  <label>Client Name </label>
+                  <input class="name-input" type="text" placeholder="Enter name" />
+                  <button class="name-input-btn">submit</button>
+                </div>
+
+                <div class="">
+                  <label>Client Region </label>
+                  <select class="input-region">
+                    <option value="">please choose a region</option>
+                    <option value="asia">Asia</option>
+                    <option value="africa">Africa</option>
+                    <option value="america">America</option>
+                    <option value="europe">Europe</option>
+                  </select>
+
+                  <button class="region-btn">submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="declare--2">
+            <form action="#">
+              <div>
+                <label>Item</label>
+                <input class="input-item" type="text" placeholder="Enter luggage items" />
+                <button class="input-item-btn">Submit</button>
+              </div>
+                </div>
+                <div class="error-message"> <i class="fi fi-sr-exclamation"></i>  error pls input a value</div>
+                
+              </div>
+              <div><a href="#">upload</a></div>
+            </form>
+          </div>
+        </div>
+
+        <div class="declaration-page-main-2">
+          <div class="client-name">
+            <div class="label-name">--- <i class="fi fi-sr-user"></i></div>
+            <div class="label-country"><i class="fi fi-sr-globe"></i> America</div>
+          </div>
+
+          <div class="declaration-page-2">
+            <div class="declare--3">
+              <div class="items-checkout-page"></div>
+             <!--  <div class="Number-of-item">
+                <label></label>
+                <select>
+                  <option value="">please choose amount</option>
+                  <option value="1">1</option>
+                  <option value="africa">2</option>
+                  <option value="america">3</option>
+                  <option value="europe">4</option>
+                  <option value="europe">5+</option>
+                </select>
+            
+                <div class= "icon-remove"><i class="fi fi-sr-cross-circle"></i> </div>
+              </div>
+            -->
+             
+            </div>
+            <div class="item-2"></div>
+          </div>
+          <div class="final-btn">
+            <div>
+              <button>Submit</button>
+            </div>
+
+            <div class="clear-btn">
+              <button>Clear</button>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <div class="scrollers">
+      <div class="scrollers-content">
+        <div class="s-content">
+        <i class="fi fi-brands-visa"></i>
+      </div>
+      <div class="s-content">
+        <i class="fi fi-brands-apple-pay"></i>
+      </div>
+      <div class="s-content">
+        <i class="fi fi-brands-huawei"></i>
+      </div>
+      <div class="s-content">
+        <i class="fi fi-brands-samsung"></i>
+      </div>
+      <div class="s-content">
+        <i class="fi fi-brands-shopify"></i>
+      </div>
+
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
