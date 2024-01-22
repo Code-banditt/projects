@@ -1,0 +1,427 @@
+@media screen and (max-width: 125rem) {
+  .navigation {
+    margin-right: 2rem;
+  }
+}
+
+/* 90rem ###########################
+##################################*/
+
+@media screen and (max-width: 90rem) {
+  .navigation {
+    font-size: 1rem;
+    margin-right: 1.9rem;
+  }
+}
+
+/* 81rem ###########################
+##################################*/
+
+@media screen and (max-width: 81rem) {
+  .header-text h1 {
+    font-size: 5.5rem;
+    margin-right: 0.6rem;
+  }
+
+  .board p {
+    font-size: 15px;
+  }
+}
+
+/* 75rem ###########################
+##################################*/
+
+@media screen and (max-width: 75rem) {
+  .board p {
+    font-size: 13px;
+  }
+  .header-text {
+    margin-right: 0.6rem;
+    margin-top: 15%;
+  }
+
+  .navigation {
+    display: hidden;
+  }
+
+  .nav-icon {
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    right: 2%;
+    z-index: 1;
+    display: block;
+    font-size: 24px;
+  }
+
+  .icon-nav {
+    margin-top: 12px;
+  }
+
+  .close-nav {
+    display: none;
+  }
+
+  .navigation {
+    background-color: rgba(137, 10, 10, 0.979);
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 30%;
+    height: 90vh;
+    transform: translateX(120%);
+
+    display: flex;
+    justify-content: flex-start;
+
+    pointer-events: none;
+    flex-direction: column;
+    font-size: 1rem;
+    box-shadow: 1px 2px 0px 2px rgb(218, 215, 215);
+    transition: all 0.5s;
+    cursor: pointer;
+
+    z-index: 1;
+    visibility: hidden;
+  }
+
+  .navigation a {
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav-open .navigation {
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-100%);
+    right: 30%;
+    transition: all 0.5s ease-in;
+  }
+
+  .nav-open .close-nav {
+    display: block;
+  }
+
+  .nav-open .icon-nav {
+    visibility: hidden;
+  }
+
+  .header-items:hover #sub-menue {
+    visibility: hidden;
+  }
+
+  /*//////////////////////////////////////
+  checkout media query
+  ///////////////////////////////////////*/
+  .checkout-section {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .checkout-section input {
+    width: 60%;
+  }
+
+  .checkout-section select {
+    width: 60%;
+  }
+
+  .declare--2 {
+    line-height: 2rem;
+  }
+  /*//////////////////////////////////////
+  checkout media query
+  ///////////////////////////////////////*/
+
+  .declaration-page-main-2 {
+    width: 60%;
+  }
+}
+
+/* 67rem ###########################
+##################################*/
+
+@media screen and (max-width: 67rem) {
+  .checkout-btn {
+    padding: 0.2rem;
+    font-weight: 700;
+    font-size: 10px;
+    width: 50%;
+  }
+
+  .condiments a {
+    font-size: 12px;
+  }
+}
+
+/* 66rem ###########################
+##################################*/
+
+@media screen and (max-width: 66rem) {
+  .header-text h1 {
+    font-size: 4.8rem;
+    margin-right: 0.6rem;
+  }
+  .board p {
+    font-size: 12px;
+  }
+
+  .navigation {
+    height: 85vh;
+  }
+
+  /*advert section*/
+
+  .advert-main h1 {
+    font-size: 14px;
+  }
+
+  .advert-main p {
+    font-size: 12px;
+    margin-right: 1rem;
+  }
+
+  .advert-main img {
+    width: 2rem;
+    height: 8vh;
+  }
+}
+
+@media screen and (max-width: 66.75rem) {
+  .header-text h1 {
+    font-size: 4.6rem;
+    margin-right: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 66.5rem) {
+  .header-text h1 {
+    font-size: 4.4rem;
+    margin-right: 0.6rem;
+  }
+  .condiments {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .condiments a {
+    font-size: 14px;
+  }
+
+  /*//////////////////////////////////////
+  checkout media query
+  ///////////////////////////////////////*/
+
+  .declaration-page-main-2 {
+    width: 60%;
+  }
+}
+
+/* 64rem ###########################
+##################################*/
+
+@media screen and (max-width: 64rem) {
+  .main-header {
+    height: 85vh;
+  }
+
+  .header-text h1 {
+    font-size: 4rem;
+  }
+
+  #sub-menue {
+    padding: 15px;
+  }
+
+  .sub-menue-content li {
+    font-size: 0.7rem;
+  }
+
+  .board p {
+    font-size: 12px;
+  }
+}
+
+/* 50rem ###########################
+##################################*/
+
+@media screen and (max-width: 50rem) {
+  .header-text h1 {
+    font-size: 3rem;
+  }
+
+  .header-text {
+    margin-top: 8rem;
+    margin-right: 16rem;
+
+    text-align: center;
+  }
+
+  .header-text p {
+    font-size: 14px;
+  }
+
+  .checkout-btn {
+    margin-left: 3.5rem;
+    font-size: 8px;
+  }
+
+  .how-to-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .board p {
+    font-size: 10px;
+  }
+
+  .condiments a {
+    font-size: 12px;
+  }
+
+  .footer-final {
+    display: flex;
+    flex-direction: column;
+    font-size: 9px;
+  }
+
+  /*//////////////////////////////////////
+  checkout media query
+  ///////////////////////////////////////*/
+
+  .declaration-page-main-2 {
+    width: 60%;
+  }
+}
+
+/* 40rem ###########################
+##################################*/
+@media screen and (max-width: 40rem) {
+  .condiments {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  /*//////////////////////////////////////
+  checkout media query
+  ///////////////////////////////////////*/
+
+  .declaration-page-main-2 {
+    width: 60%;
+  }
+}
+
+/* 31rem ###########################
+##################################*/
+
+/* 26rem ###########################
+##################################*/
+
+@media screen and (max-width: 28rem) {
+  .navigation {
+    font-size: 10px;
+    height: 80vh;
+  }
+
+  .nav-icon {
+    font-size: 12px;
+    display: flex;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  .Advert-section {
+    height: 80vh;
+  }
+
+  .advert-main h1 {
+    font-size: 10px;
+  }
+
+  .advert-main p {
+    font-size: 8px;
+    margin-right: 0.8rem;
+  }
+
+  .advert-main img {
+    width: 1rem;
+    height: 5vh;
+  }
+
+  .advert-main-img img {
+    width: 8rem;
+    height: 18vh;
+  }
+
+  .how-to-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .condiments {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .condiments a {
+    font-size: 8px;
+  }
+
+  .footer-final {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*//////////////////////////////////////
+  checkout media query
+  ///////////////////////////////////////*/
+
+  .declaration-page-main-2 {
+    margin-right: 12rem;
+    width: 12rem;
+    font-size: 12px;
+  }
+
+  .declaration-page-1 {
+    flex-wrap: wrap;
+  }
+
+  .declare--3 {
+    font-size: 12px;
+  }
+
+  .declare--2 {
+    font-size: 14px;
+    margin-right: 1rem;
+  }
+
+  .checkout-section {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    overflow-x: hidden;
+  }
+
+  .checkout-section input {
+    margin-right: 3rem;
+    width: 8rem;
+  }
+
+  .checkout-section select {
+    width: 8rem;
+    font-size: 8px;
+    margin-right: 0.3rem;
+  }
+
+  .checkout-section button {
+    width: 12rem;
+    font-size: 8px;
+  }
+
+  .input-item-btn {
+    font-size: 8px;
+  }
+}

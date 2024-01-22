@@ -1,0 +1,237 @@
+.header-contents {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 2px 0px 0px rgb(218, 215, 215);
+}
+
+.header :hover {
+  background-color: rgba(137, 10, 10, 0.979);
+  color: white;
+}
+
+.content-1 {
+  padding: 10px;
+}
+
+.content-1 h1 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-2 {
+  display: flex;
+  gap: 1rem;
+  padding: 10px;
+}
+
+.head-icon {
+  transform: translate(0%, 22%);
+  cursor: pointer;
+}
+
+.head-icon a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+}
+
+/*############################
+##############################
+main-page*/
+
+.checkout-section {
+  display: flex;
+  justify-content: center;
+  padding: 6rem;
+}
+
+.checkout-main-contents {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: rem;
+}
+
+.client-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  box-shadow: 1px 0px 0px 2px rgb(218, 215, 215);
+  padding: 10px;
+  background-color: rgba(137, 10, 10, 0.979);
+  color: white;
+}
+
+.declaration-page-main-2 {
+  width: 40%;
+}
+
+.declaration-page-2 {
+  display: flex;
+
+  justify-content: center;
+  box-shadow: 1px 0px 0px 2px rgb(218, 215, 215);
+
+  height: 40vh;
+}
+
+.declare--3 {
+  display: flex;
+  justify-content: space-between;
+  height: 5vh;
+  padding: 10px;
+
+  width: 100%;
+  font-size: 20px;
+}
+
+.declare--3 label {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.declare--3 select {
+  border-radius: 5px;
+  width: 100%;
+  height: 4vh;
+  border: 2px solid rgba(137, 10, 10, 0.979);
+}
+
+.final-btn button {
+  margin-top: 10px;
+  width: 30%;
+  height: 5vh;
+  cursor: pointer;
+  box-shadow: 1px 2px 1px 0px rgb(218, 215, 215);
+  font-weight: 600;
+  color: white;
+  background-color: rgba(137, 10, 10, 0.979);
+}
+
+.final-btn :hover {
+  background-color: white;
+  color: rgba(137, 10, 10, 0.979);
+}
+
+/*#################################
+*/
+
+.declaration-page-1 {
+  border-right: 1px solid rgba(137, 10, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.declaration-page-2 {
+  overflow-y: scroll;
+}
+
+.declare--2 {
+  display: flex;
+  font-size: 17px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.declare--2 input {
+  font-weight: 600;
+  margin: 8px 0;
+  width: 60%;
+  height: 4vh;
+  border: solid 2px;
+}
+
+.declare--2 button {
+  font-weight: 600;
+  max-width: 20%;
+  height: 5vh;
+  cursor: pointer;
+  box-shadow: 1px 2px 1px 0px rgb(218, 215, 215);
+  font-weight: 600;
+  color: white;
+  background-color: rgba(137, 10, 1);
+}
+
+.declare-1 input {
+  font-weight: 600;
+  margin: 8px 0;
+  width: 100%;
+  height: 4vh;
+  border: solid 2px;
+}
+
+.declare-1 button {
+  max-width: 20%;
+  height: 5vh;
+  cursor: pointer;
+  box-shadow: 1px 2px 1px 0px rgb(218, 215, 215);
+  font-weight: 600;
+  color: white;
+  background-color: rgba(137, 10, 1);
+}
+
+.declare-1 select {
+  margin: 8px 0;
+  width: 100%;
+  height: 4vh;
+  border: solid 2px;
+  font-weight: 550;
+}
+
+.declare-1-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  line-height: 24px;
+}
+
+.Number-of-item {
+  display: flex;
+  gap: 5px;
+}
+
+.icon-remove {
+  cursor: pointer;
+}
+
+.terms-and-co {
+  display: flex;
+  font-size: 12px;
+}
+
+.terms-and-co input {
+  width: 7%;
+  transform: translate(20%, -50%);
+}
+
+.error-message {
+  font-size: 10px;
+  color: red;
+  display: none;
+}
+
+.scrollers-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  overflow: scroll;
+  font-size: 3rem;
+  padding: 15px;
+  box-shadow: 1px 0px 2px 0px rgb(218, 215, 215);
+}
+
+.scrollers-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* used by javascript*/
+.none {
+  display: none;
+}
+
+.sum {
+  display: block;
+}
