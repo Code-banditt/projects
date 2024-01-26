@@ -285,3 +285,7 @@ modal section 4444444444444444444*/
   transition: 0.8s ease-in;
   visibility: visible;
 }
+
+.sum3 {
+  visibility: hidden;
+}

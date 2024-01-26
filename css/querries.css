@@ -48,6 +48,9 @@
     max-width: 80%;
   }
 
+  html {
+  }
+
   body {
     overflow-x: hidden;
   }
@@ -82,7 +85,7 @@
     background-color: rgba(137, 10, 10, 0.979);
     position: absolute;
     top: 0;
-    left: 99%;
+    left: 100%;
     width: 50%;
     height: 100vh;
     transform: translateX(100%);
@@ -112,6 +115,7 @@
     visibility: visible;
     pointer-events: auto;
     transform: translateX(-100%);
+    overflow-x: hidden;
     right: 30%;
     transition: all 0.5s ease-in;
   }
@@ -188,6 +192,9 @@
 
   .navigation {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .advert-main h1 {
@@ -346,7 +353,8 @@
   }
 
   .header-text h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
+    margin-right: 0.9rem;
   }
 
   /*//////////////////////////////////////
@@ -366,8 +374,8 @@
 
 @media screen and (max-width: 28rem) {
   .navigation {
-    font-size: 8px;
-    height: 70vh;
+    font-size: 16px;
+    height: 95vh;
     transform: translate(-50%);
   }
 
@@ -376,7 +384,7 @@
   }
 
   .nav-icon {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: flex;
     margin-top: 2rem;
     margin-right: 5px;
@@ -496,7 +504,7 @@
     right: 0;
     margin: 0 auto;
     position: absolute;
-    height: 200vh;
+    height: 250vh;
 
     background-color: rgba(218, 215, 215, 0.555);
   }

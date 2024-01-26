@@ -35,10 +35,40 @@ const clearBtn = document.querySelector(".clear-btn");
 const modal = document.querySelector(".modal-main");
 const closeModal = document.querySelector(".close-modal");
 const submitbtn = document.querySelector(".submit-btn");
+const success = document.querySelector(".succeded");
+const failed = document.querySelector(".rejected");
 
 // SCRIPT////////////////////////////////////////
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
+
+//forbidden items
+
+const forbiddenItems = [
+  (items = "bullet"),
+  "coin",
+  "baseball bat",
+  "hockey stick",
+  "iron",
+  "metal",
+  "diamond",
+  "gold",
+  "bucket",
+  " dog",
+  "knife",
+  "razor",
+  "toothpick",
+  "kidney",
+  "cocaine",
+  "meth",
+  "weed",
+  "codeine",
+  "cannabis",
+  "crystal",
+  "plate",
+  "cage",
+  "barrow",
+];
 
 //helper function
 
@@ -149,7 +179,21 @@ clearBtn.addEventListener("click", function (event) {
 //submit item
 
 submitbtn.addEventListener("click", function (e) {
-  modal.classList.add("sum2");
+  const item = InputItem.value;
+  const name = inputname.value;
+  const valid = values.value;
+
+  if (item == forbiddenItems) {
+    modal.classList.add("sum2");
+    success.classList.add("none");
+    failed.classList.add("sum");
+  }
+
+  if (typeof item === "string") {
+    modal.classList.add("sum2");
+    success.classList.add("sum");
+    failed.classList.remove("sum");
+  }
 });
 
 closeModal.addEventListener("click", function () {
