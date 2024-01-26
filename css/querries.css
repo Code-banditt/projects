@@ -28,6 +28,14 @@
   }
 }
 
+/* 76rem ###########################
+##################################*/
+@media screen and (max-width: 76rem) {
+  .navigation {
+    display: none;
+  }
+}
+
 /* 75rem ###########################
 ##################################*/
 
@@ -51,10 +59,6 @@
     margin-top: 15%;
   }
 
-  .navigation {
-    display: none;
-  }
-
   .nav-icon {
     position: absolute;
     color: white;
@@ -74,15 +78,14 @@
     display: none;
   }
 
-  /*
   .navigation {
     background-color: rgba(137, 10, 10, 0.979);
     position: absolute;
     top: 0;
-    left: 100%;
-    width: 30%;
-    height: 90vh;
-    transform: translateX(120%);
+    left: 99%;
+    width: 50%;
+    height: 100vh;
+    transform: translateX(100%);
 
     display: flex;
     justify-content: flex-start;
@@ -96,9 +99,10 @@
 
     z-index: 1;
     visibility: hidden;
+
+    overflow-x: hidden;
   }
 
-  */
   .navigation a {
     color: white;
     cursor: pointer;
@@ -112,12 +116,12 @@
     transition: all 0.5s ease-in;
   }
 
-  .nav-open .close-nav {
-    display: block;
+  .nav-open .icon-nav {
+    display: none;
   }
 
-  .nav-open .icon-nav {
-    visibility: hidden;
+  .nav-open .close-nav {
+    display: block;
   }
 
   .header-items:hover #sub-menue {
@@ -260,7 +264,7 @@
 
 @media screen and (max-width: 50rem) {
   .header-text h1 {
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
 
   .header-text {
@@ -271,7 +275,7 @@
   }
 
   .header-text p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .checkout-btn {
@@ -310,6 +314,10 @@
     justify-content: center;
   }
 
+  #adverts-1 h1 {
+    font-size: 1.2rem;
+  }
+
   #adverts-1 img {
     margin-left: 0.4rem;
   }
@@ -335,6 +343,10 @@
     display: flex;
     flex-direction: column;
     padding: 18px;
+  }
+
+  .header-text h1 {
+    font-size: 3.2rem;
   }
 
   /*//////////////////////////////////////
@@ -416,10 +428,18 @@
   checkout media query
   ///////////////////////////////////////*/
 
+  .header-contents h1 {
+    font-size: 1rem;
+  }
+
   .declaration-page-main-2 {
-    margin-left: 10%;
-    width: 80%;
+    margin-left: 16%;
+    width: 68%;
     font-size: 12px;
+  }
+
+  .declaration-page-2 {
+    height: 65vh;
   }
 
   .checkout-main-contents {
@@ -457,11 +477,42 @@
   }
 
   .checkout-section button {
-    width: 12rem;
+    width: 18rem;
     font-size: 8px;
   }
 
   .input-item-btn {
     font-size: 8px;
+  }
+
+  /* modal */
+  .modal-main {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    height: 200vh;
+
+    background-color: rgba(218, 215, 215, 0.555);
+  }
+
+  .modal-message-sect {
+    background-color: white;
+    font-size: 1rem;
+    margin-top: 50%;
+
+    height: 45vh;
+    padding: 25px;
+    width: 70%;
+    box-shadow: 1px 0px 2px 0px rgb(218, 215, 215);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
   }
 }
