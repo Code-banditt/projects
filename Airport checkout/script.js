@@ -30,6 +30,12 @@ const error = document.querySelector(".error-message");
 //
 const clearBtn = document.querySelector(".clear-btn");
 
+//modal
+
+const modal = document.querySelector(".modal-main");
+const closeModal = document.querySelector(".close-modal");
+const submitbtn = document.querySelector(".submit-btn");
+
 // SCRIPT////////////////////////////////////////
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
@@ -138,4 +144,14 @@ clearBtn.addEventListener("click", function (event) {
   labelname.textContent = `${nameData}`;
 
   ItemContainer.textContent = `${data}`;
+});
+
+//submit item
+
+submitbtn.addEventListener("click", function (e) {
+  modal.classList.add("sum2");
+});
+
+closeModal.addEventListener("click", function () {
+  modal.classList.remove("sum2");
 });

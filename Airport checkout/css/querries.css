@@ -28,20 +28,35 @@
   }
 }
 
+/* 76rem ###########################
+##################################*/
+@media screen and (max-width: 76rem) {
+  .navigation {
+    display: none;
+  }
+}
+
 /* 75rem ###########################
 ##################################*/
 
 @media screen and (max-width: 75rem) {
+  .body {
+    margin: 0;
+    padding: 0;
+  }
+  .header-text {
+    max-width: 80%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
   .board p {
     font-size: 13px;
   }
   .header-text {
     margin-right: 0.6rem;
     margin-top: 15%;
-  }
-
-  .navigation {
-    display: hidden;
   }
 
   .nav-icon {
@@ -56,7 +71,7 @@
   }
 
   .icon-nav {
-    margin-top: 12px;
+    font-size: 2rem;
   }
 
   .close-nav {
@@ -67,10 +82,10 @@
     background-color: rgba(137, 10, 10, 0.979);
     position: absolute;
     top: 0;
-    left: 100%;
-    width: 30%;
-    height: 90vh;
-    transform: translateX(120%);
+    left: 99%;
+    width: 50%;
+    height: 100vh;
+    transform: translateX(100%);
 
     display: flex;
     justify-content: flex-start;
@@ -84,6 +99,8 @@
 
     z-index: 1;
     visibility: hidden;
+
+    overflow-x: hidden;
   }
 
   .navigation a {
@@ -99,19 +116,20 @@
     transition: all 0.5s ease-in;
   }
 
-  .nav-open .close-nav {
-    display: block;
+  .nav-open .icon-nav {
+    display: none;
   }
 
-  .nav-open .icon-nav {
-    visibility: hidden;
+  .nav-open .close-nav {
+    display: block;
   }
 
   .header-items:hover #sub-menue {
     visibility: hidden;
   }
+  /*advert secion*/
 
-  /*//////////////////////////////////////
+  /*/////////////////////////////////////
   checkout media query
   ///////////////////////////////////////*/
   .checkout-section {
@@ -169,10 +187,8 @@
   }
 
   .navigation {
-    height: 85vh;
+    height: 100vh;
   }
-
-  /*advert section*/
 
   .advert-main h1 {
     font-size: 14px;
@@ -223,7 +239,7 @@
 
 @media screen and (max-width: 64rem) {
   .main-header {
-    height: 85vh;
+    height: 100vh;
   }
 
   .header-text h1 {
@@ -248,18 +264,18 @@
 
 @media screen and (max-width: 50rem) {
   .header-text h1 {
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
 
   .header-text {
     margin-top: 8rem;
-    margin-right: 16rem;
+    margin-right: 15rem;
 
     text-align: center;
   }
 
   .header-text p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .checkout-btn {
@@ -286,6 +302,31 @@
     font-size: 9px;
   }
 
+  /*advert section*/
+
+  .Advert-section {
+    height: 100vh;
+  }
+
+  #adverts-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #adverts-1 h1 {
+    font-size: 1.2rem;
+  }
+
+  #adverts-1 img {
+    margin-left: 0.4rem;
+  }
+
+  .advert-main-img {
+    display: flex;
+    justify-content: center;
+  }
+
   /*//////////////////////////////////////
   checkout media query
   ///////////////////////////////////////*/
@@ -302,6 +343,10 @@
     display: flex;
     flex-direction: column;
     padding: 18px;
+  }
+
+  .header-text h1 {
+    font-size: 3.2rem;
   }
 
   /*//////////////////////////////////////
@@ -321,14 +366,19 @@
 
 @media screen and (max-width: 28rem) {
   .navigation {
-    font-size: 10px;
-    height: 80vh;
+    font-size: 8px;
+    height: 70vh;
+    transform: translate(-50%);
+  }
+
+  .header-items {
+    margin-right: 0.2rem;
   }
 
   .nav-icon {
-    font-size: 12px;
+    font-size: 1.5rem;
     display: flex;
-    margin-top: 5px;
+    margin-top: 2rem;
     margin-right: 5px;
   }
 
@@ -337,12 +387,12 @@
   }
 
   .advert-main h1 {
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .advert-main p {
-    font-size: 8px;
-    margin-right: 0.8rem;
+    font-size: 5px;
+    margin-right: 1rem;
   }
 
   .advert-main img {
@@ -351,8 +401,8 @@
   }
 
   .advert-main-img img {
-    width: 8rem;
-    height: 18vh;
+    width: 18rem;
+    height: 30vh;
   }
 
   .how-to-section {
@@ -378,14 +428,24 @@
   checkout media query
   ///////////////////////////////////////*/
 
+  .header-contents h1 {
+    font-size: 1rem;
+  }
+
   .declaration-page-main-2 {
-    margin-right: 12rem;
-    width: 12rem;
+    margin-left: 16%;
+    width: 68%;
     font-size: 12px;
   }
 
-  .declaration-page-1 {
-    flex-wrap: wrap;
+  .declaration-page-2 {
+    height: 65vh;
+  }
+
+  .checkout-main-contents {
+    width: 80%;
+
+    padding: 2rem;
   }
 
   .declare--3 {
@@ -394,34 +454,65 @@
 
   .declare--2 {
     font-size: 14px;
-    margin-right: 1rem;
   }
 
   .checkout-section {
     font-size: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-items: left;
+    display: grid;
+    grid-row: 1fr 1fr;
     overflow-x: hidden;
   }
 
   .checkout-section input {
     margin-right: 3rem;
-    width: 8rem;
+    width: 100%;
+    min-height: 5vh;
   }
 
   .checkout-section select {
-    width: 8rem;
+    width: 100%;
+    height: 5vh;
     font-size: 8px;
     margin-right: 0.3rem;
   }
 
   .checkout-section button {
-    width: 12rem;
+    width: 18rem;
     font-size: 8px;
   }
 
   .input-item-btn {
     font-size: 8px;
+  }
+
+  /* modal */
+  .modal-main {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    height: 200vh;
+
+    background-color: rgba(218, 215, 215, 0.555);
+  }
+
+  .modal-message-sect {
+    background-color: white;
+    font-size: 1rem;
+    margin-top: 50%;
+
+    height: 45vh;
+    padding: 25px;
+    width: 70%;
+    box-shadow: 1px 0px 2px 0px rgb(218, 215, 215);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
   }
 }
