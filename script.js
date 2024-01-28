@@ -45,7 +45,7 @@ const failed = document.querySelector(".rejected");
 //forbidden items
 
 const forbiddenItems = [
-  (items = "bullet"),
+  "bullet",
   "coin",
   "baseball bat",
   "hockey stick",
@@ -69,6 +69,8 @@ const forbiddenItems = [
   "cage",
   "barrow",
 ];
+
+const forbiddencheck = function () {};
 
 //helper function
 
@@ -178,22 +180,23 @@ clearBtn.addEventListener("click", function (event) {
 
 //submit item
 
+let constant;
+
 submitbtn.addEventListener("click", function (e) {
   const item = InputItem.value;
   const name = inputname.value;
   const valid = values.value;
 
-  if (item == forbiddenItems) {
+  if (item.length === 0) {
     modal.classList.add("sum2");
     success.classList.add("none");
     failed.classList.add("sum");
-  }
-
-  if (typeof item === "string") {
-    modal.classList.add("sum2");
-    success.classList.add("sum");
-    failed.classList.remove("sum");
-  }
+    error.classList.add("sum");
+  } else item.length !== 0;
+  modal.classList.add("sum2");
+  success.classList.add("sum");
+  failed.classList.remove("sum");
+  error.classList.remove("sum");
 });
 
 closeModal.addEventListener("click", function () {

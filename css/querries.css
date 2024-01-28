@@ -48,12 +48,10 @@
     max-width: 80%;
   }
 
-  html {
+  .main-header {
+    position: relative;
   }
 
-  body {
-    overflow-x: hidden;
-  }
   .board p {
     font-size: 13px;
   }
@@ -77,18 +75,19 @@
     font-size: 2rem;
   }
 
-  .close-nav {
-    display: none;
+  .nav-open {
+    overflow-x: hidden;
   }
 
   .navigation {
     background-color: rgba(137, 10, 10, 0.979);
     position: absolute;
     top: 0;
-    left: 100%;
-    width: 50%;
+    left: 0;
+
+    width: 200%;
+    transform: translateX(-50%);
     height: 100vh;
-    transform: translateX(100%);
 
     display: flex;
     justify-content: flex-start;
@@ -100,8 +99,8 @@
     transition: all 0.5s;
     cursor: pointer;
 
+    font-size: 12px;
     z-index: 1;
-    visibility: hidden;
 
     overflow-x: hidden;
   }
@@ -112,20 +111,24 @@
   }
 
   .nav-open .navigation {
-    visibility: visible;
+    visibility: hidden;
     pointer-events: auto;
-    transform: translateX(-100%);
-    overflow-x: hidden;
-    right: 30%;
+    transform: translateX(100%);
+
     transition: all 0.5s ease-in;
+    overflow-x: hidden;
   }
 
-  .nav-open .icon-nav {
+  .icon-nav {
     display: none;
   }
 
-  .nav-open .close-nav {
+  .nav-open .icon-nav {
     display: block;
+  }
+
+  .nav-open .close-nav {
+    display: none;
   }
 
   .header-items:hover #sub-menue {
@@ -512,7 +515,7 @@
   .modal-message-sect {
     background-color: white;
     font-size: 1rem;
-    margin-top: 50%;
+    margin-top: 180%;
 
     height: 45vh;
     padding: 25px;
