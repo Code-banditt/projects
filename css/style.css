@@ -56,6 +56,7 @@ body {
   height: 30vh;
   font-size: 1.2rem;
   margin-top: 10px;
+  z-index: 1;
  
 }
 
@@ -86,7 +87,11 @@ body {
   font-size: 6.5rem;
 }
 
+.checkout-items li :hover{
+  border-bottom: solid 2px white;
 
+
+}
 
 .booking-items a {
   color: rgba(7, 7, 116, 0.803);;
@@ -479,4 +484,55 @@ footer-section
   position: fixed;
 }
 
+.reveal{
+  margin-top: 1rem;
+
+}
+
+.sum{
+  display: block;
+}
+ 
+
+.sum3{
+
+  opacity: 0;
+  transition:0.8s ;
+
+
+  
+}
+.sum2 {
+  opacity: 100%;
+
+  transition: 0.9s;
+  margin-top: 0.5rem;
+ 
+
+}
+
+
+.sticky-content{
+
+display: flex;
+gap: 2rem;
+position: absolute fixed;
+top:0;
+width: 100%;
+color: white;
+padding: 15px;
+background-color: rgba(11, 11, 93, 0.778);
+cursor: pointer;
+
+}
+
+.sticky-content a{
+  text-decoration: none;
+  color: white;
+}
+
+#sticky-content{
+  position: fixed;
+}
 /*5wpwYD9QyKVuUX6
+

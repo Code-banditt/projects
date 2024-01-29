@@ -281,6 +281,10 @@ modal section 4444444444444444444*/
   display: block;
 }
 
+.reveal {
+  transition: 0.8s ease-in;
+}
+
 .sum2 {
   transition: 0.8s ease-in;
   visibility: visible;
