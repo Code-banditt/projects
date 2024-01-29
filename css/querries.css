@@ -40,10 +40,6 @@
 ##################################*/
 
 @media screen and (max-width: 75rem) {
-  .body {
-    margin: 0;
-    padding: 0;
-  }
   .header-text {
     max-width: 80%;
   }
@@ -68,7 +64,7 @@
     right: 2%;
     z-index: 1;
     display: block;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .icon-nav {
@@ -83,9 +79,9 @@
     background-color: rgba(137, 10, 10, 0.979);
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
 
-    width: 200%;
+    width: 100%;
     transform: translateX(-50%);
     height: 100vh;
 
@@ -107,7 +103,6 @@
 
   .navigation a {
     color: white;
-    cursor: pointer;
   }
 
   .nav-open .navigation {
@@ -240,7 +235,7 @@
   ///////////////////////////////////////*/
 
   .declaration-page-main-2 {
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -273,8 +268,21 @@
 ##################################*/
 
 @media screen and (max-width: 50rem) {
+  .navigation {
+    width: 100%;
+    pointer-events: auto;
+  }
+
   .header-text h1 {
     font-size: 4.5rem;
+  }
+
+  .main-text P {
+    color: rgba(0, 0, 255, 0.877);
+  }
+
+  .brand-logo {
+    line-height: 36px;
   }
 
   .header-text {
@@ -342,7 +350,19 @@
   ///////////////////////////////////////*/
 
   .declaration-page-main-2 {
-    width: 60%;
+    width: 100%;
+  }
+
+  .declaration-page-1 input {
+    width: 100%;
+  }
+
+  .declaration-page-1 select {
+    width: 100%;
+  }
+  .declaration-page-1 button {
+    width: 12rem;
+    font-size: 8px;
   }
 }
 
@@ -360,17 +380,59 @@
     margin-right: 0.9rem;
   }
 
+  .navigation {
+    width: 200%;
+    font-size: 16px;
+    pointer-events: auto;
+  }
+
   /*//////////////////////////////////////
   checkout media query
   ///////////////////////////////////////*/
 
   .declaration-page-main-2 {
-    width: 60%;
+    width: 100%;
+  }
+
+  .declaration-page-1 input {
+    width: 100%;
+  }
+
+  .declaration-page-1 select {
+    width: 100%;
+  }
+  .declaration-page-1 button {
+    width: 12rem;
+    font-size: 8px;
   }
 }
 
 /* 31rem ###########################
 ##################################*/
+
+@media screen and (max-width: 31rem) {
+  /*checout page*/
+  .checkout-main-contents {
+    margin-right: 1rem;
+  }
+
+  .declaration-page-main-2 {
+    width: 120%;
+  }
+
+  .declaration-page-1 input {
+    width: 105%;
+  }
+
+  .declaration-page-1 select {
+    width: 100%;
+  }
+  .declaration-page-1 button {
+    width: 18rem;
+
+    font-size: 8px;
+  }
+}
 
 /* 26rem ###########################
 ##################################*/
@@ -398,7 +460,7 @@
   }
 
   .advert-main h1 {
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .advert-main p {

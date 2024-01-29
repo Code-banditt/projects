@@ -187,16 +187,17 @@ submitbtn.addEventListener("click", function (e) {
   const name = inputname.value;
   const valid = values.value;
 
-  if (item.length === 0) {
+  if (item.length !== 0) {
     modal.classList.add("sum2");
-    success.classList.add("none");
+    success.classList.add("sum");
+    failed.classList.remove("sum");
+  }
+
+  if (item.length == 0) {
+    modal.classList.add("sum2");
+    success.classList.remove("sum");
     failed.classList.add("sum");
-    error.classList.add("sum");
-  } else item.length !== 0;
-  modal.classList.add("sum2");
-  success.classList.add("sum");
-  failed.classList.remove("sum");
-  error.classList.remove("sum");
+  }
 });
 
 closeModal.addEventListener("click", function () {

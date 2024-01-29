@@ -45,6 +45,7 @@ body {
 
 .brand-logo h1 {
   color: white;
+  
 }
 
 .navigation {
@@ -78,13 +79,17 @@ body {
   transform: translate(50%, 0%);
 }
 
+
+
 .header-text h1 {
   color: white;
   font-size: 6.5rem;
 }
 
+
+
 .booking-items a {
-  color: rgba(137, 10, 10, 0.979);
+  color: rgba(7, 7, 116, 0.803);;
 }
 
 .booking-items li :hover {
@@ -93,8 +98,8 @@ body {
 .header-text p {
   font-size: 1.6rem;
 
-  color: white;
-  font-weight: 400;
+  color: rgba(0, 0, 255, 0.847);
+  font-weight: 700;
 }
 
 .main-text {
@@ -246,7 +251,7 @@ ADVERT SECTION*/
   font-size: 18px;
   align-self: center;
   margin-bottom: 25px;
-  color: rgba(137, 10, 10, 0.979);
+  color:rgba(7, 7, 116, 0.803);;
   transform: translate(0%, -20%);
 }
 
@@ -341,7 +346,7 @@ how to section*/
 }
 
 #to-do-icon {
-  color: rgba(137, 10, 10, 0.979);
+  color:rgba(7, 7, 116, 0.803);
   font-size: 24px;
 }
 
@@ -388,7 +393,7 @@ footer-section
   display: flex;
   justify-content: space-between;
   box-shadow: 1px 1px 2px 2px rgb(218, 215, 215);
-  background-color: rgba(137, 10, 10, 0.979);
+  background-color: rgba(7, 7, 116, 0.803);
   color: white;
   padding: 15px;
 }
